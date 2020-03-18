@@ -10,7 +10,7 @@
 
 MySQL支持多种类型，大致可分为三类：
 
-**数值：**TINYINT、SMALLINT、MEDIUMINT、**INT**、BIGINT、**FLOAT、DOUBLE**、DECIMAL
+**数值：** TINYINT、SMALLINT、MEDIUMINT、**INT**、BIGINT、**FLOAT、DOUBLE**、DECIMAL
 
 **日期/时间：DATE、TIME、YEAR、DATETIME**、TIMESTAMP
 
@@ -57,16 +57,16 @@ drop table 表名；删除数据表
 		建表之后删除主键：alter table 表名 drop primary key;
 		建表之后修改主键：alter table 表名 modify id int primary key;
 
-**自增约束auto_increment：**和主键约束搭配使用，自动管控对应主键，无输入时自动增长
+**自增约束auto_increment：** 和主键约束搭配使用，自动管控对应主键，无输入时自动增长
 
-**唯一约束unique：**约束修饰的字段的值不可以重复<可为空>	若添加两个唯一约束，则二者不同时重复即可
+**唯一约束unique：** 约束修饰的字段的值不可以重复<可为空>	若添加两个唯一约束，则二者不同时重复即可
 		alter table 表名 add unique(name);	
 
-**非空约束not null：**修饰的字段不能为空
+**非空约束not null：** 修饰的字段不能为空
 
-**默认约束default：**插入数据时，相应字段没有传值，则使用默认值
+**默认约束default：** 插入数据时，相应字段没有传值，则使用默认值
 
-**外键约束foreign key：**涉及到两个表-主表、副表	若主表记录被副表引用，则不可以删除
+**外键约束foreign key：** 涉及到两个表-主表、副表	若主表记录被副表引用，则不可以删除
 		foreign key(class_id) references classes(id)
 
 
@@ -143,7 +143,7 @@ SQL有四种连接查询：
 
 
 
-1.查询表中所有记录<全部字段>——select ***** from student;
+1.查询表中所有记录<全部字段>——select * from student;
 
 2.查询指定字段—— select **sname, ssex, class** from student;
 
